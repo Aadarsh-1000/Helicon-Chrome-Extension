@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>HELICON</title>
+    <link rel="stylesheet" href="newtab.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&family=Fira+code:wght@300;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="jarvis" z-index="1000">
+
+    <div class="mac-sidebar">
+
+
+
+        <!-- STATIC SHORTCUTS -->
+        <div id="static-shortcuts">
+            <a href="https://github.com" class="sidebar-shortcut" title="GitHub">
+                <img src="Picture3.png" alt="GitHub">
+            </a>
+
+            <a href="https://www.chess.com/" class="sidebar-shortcut" title="Chess.com">
+                <img src="https://www.chess.com/bundles/web/images/brand/chesscom_pawn.5dfdea51.png" alt="Chess">
+            </a>
+
+            <a href="https://flavortown.hackclub.com/" class="sidebar-shortcut" title="FlavorTown">
+                <img src="unnamed-removebg-preview.png" alt="FlavorTown">
+            </a>
+        </div>
+
+        <!-- DYNAMIC SHORTCUTS -->
+        <div id="dynamic-shortcuts"></div>
+
+        <!-- ADD BUTTON -->
+        <button id="addShortcutBtn" class="sidebar-shortcut add-btn" title="Add Shortcut">
+            <img src="plus-icon-black-2.png" alt="Add shortcut">
+        </button>
+
+    </div>
+
+
+
+    </div>
+    <p>ONLINE</p>
+
+    <div class="hud">
+        <!-- WIDGET PANEL -->
+        <div class="widget-panel">
+            <div class="widget">
+                <div class="city-search">
+                    <input id="cityInput" placeholder="TYPE CITY NAME" autocomplete="off" />
+                    <div id="command-hint">
+                        try: <span>alert</span> · <span>city london</span> · <span>search ai</span>
+                    </div>
+
+                    <div id="citySuggestions"></div>
+                </div>
+                <br>
+                <div class="chat-header">
+                    HELICON AI
+                    <span class="chat-dot"></span>
+                </div>
+
+
+                <div class="widget-title">WEATHER</div>
+                <div id="weather-temp">--°C</div>
+                <div id="weather-city">Loading...</div>
+            </div>
+            <div id="chat">
+                <div class="chat-header">
+                    HELICON AI
+                    <span class="chat-dot"></span>
+                </div>
+
+                <div id="chat-log"></div>
+            </div>
+
+
+        </div>
+
+        <div id="clock" class="clock"></div>
+
+
+        <h1>HELICON</h1>
+
+
+        <input id="command" placeholder="ENTER REQUEST" autofocus />
+        <div class="mode-toggle">
+            <button id="modeBtn" data-mode="ai">AI</button>
+        </div>
+</div>
+
+
+
+    <audio id="bootSound" src="boot.mp3"></audio>
+
+
+    <div class="voice-bars" z-index="10000000000000000000000000000000">
+        <span></span><span></span><span></span><span></span>
+    </div>
+
+
+
+</body>
+<canvas id="matrix"></canvas>
+<script src="newtab.js"></script>
+
+</html>

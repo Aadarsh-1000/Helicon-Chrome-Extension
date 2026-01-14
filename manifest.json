@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "JARVIS New Tab",
+  "description": "JARVIS-style futuristic new tab",
+  "version": "1.0",
+
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+
+  "permissions": ["storage"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
